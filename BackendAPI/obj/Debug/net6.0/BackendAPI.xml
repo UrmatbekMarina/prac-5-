@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BackendAPI.Controllers.CategoryController.Add(Domain.Models.Category)">
+             <summary>
+             Создание новой категории
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             POST /Todo
+             {
+             "id" : "11",
+             "CategoryName" : "qq",
+             "GoodsId" : "1"
+             }
+            
+             </remarks>
+             <param name="model">Категории</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.Update(Domain.Models.Category)">
+             <summary>
+             Обновление категории
+             </summary>
+             <remarks>
+             
+            
+             </remarks>
+             <param name="model">Категории</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.Delete(System.Int32)">
+             <summary>
+             Удаление  категории
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             DELETE /Todo
+             {
+             "id" : "11"
+             }
+            
+             </remarks>
+             <param name="model">Категории</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CustomerController.Add(BackendAPI.Contracts.User.CreateUserRequest)">
+             <summary>
+             Создание нового Customer
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             POST /Todo
+             {
+             "Id" : "1",
+             "Name" : "aaa"
+             }
+            
+             </remarks>
+             <param name="model">Customer</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CustomerController.Update(Domain.Models.Customer)">
+            <summary>
+            Обновление Customer
+            </summary>
+            <remarks>
+            </remarks>
+            <param name="model">Customer</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CustomerController.Delete(System.Int32)">
+             <summary>
+             Удаление Customer
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             DELETE /Todo
+             {
+             "Id" : "1"
+             }
+            
+             </remarks>
+             <param name="model">Customer</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.DeliveryController.DeliveryControllerr.Add(BackendAPI.Contracts.CreatDeliveryRequest)">
+             <summary>
+             Создание нового delivery
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             POST /Todo
+             {
+             "DeliveryStatus" : "aaa",
+             "DeliveryPrice" : "1",
+             "UserId" : "1",
+             "GoodsId" : "1"
+             }
+            
+             </remarks>
+             <param name="model">Delivery</param>
+             <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BackendAPI.Controllers.DeliveryController.DeliveryControllerr.Update(Domain.Models.Delivery)" -->
+        <member name="M:BackendAPI.Controllers.DeliveryController.DeliveryControllerr.Delete(System.Int32)">
+             <summary>
+             Удаление delivery
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             DELETE /Todo
+             {
+             "Id" : "1"
+             }
+            
+             </remarks>
+             <param name="model">Delivery</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodController.Add(BackendAPI.Contracts.CreateGoodRequest)">
+             <summary>
+             Создание нового Good
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             POST /Todo
+             {
+             "Name" : "aaa",
+             "CustomerId" : "aaa",
+             "ManufacturerId" : "aaa",
+             "Value" : "aaa",
+             "Price" : "aaa",
+             "Discount" : "aaa"
+             }
+            
+             </remarks>
+             <param name="model">Good</param>
+             <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BackendAPI.Controllers.GoodController.Update(Domain.Models.Good)" -->
+        <member name="M:BackendAPI.Controllers.GoodController.Delete(System.Int32)">
+             <summary>
+             Удаление Good
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             DELETE /Todo
+             {
+             "Id" : "1"
+             }
+            
+             </remarks>
+             <param name="model">Good</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.ManufacturerController.Add(BackendAPI.Contracts.CreateManufacturerRequest)">
+             <summary>
+             Создание нового Manufacturer
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             POST /Todo
+             {
+             "Id" : "1",
+             "Name" : "aaa",
+             "Inn" : "1",
+             "Location" : "aaa"
+             }
+            
+             </remarks>
+             <param name="model">Manufacturer</param>
+             <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BackendAPI.Controllers.ManufacturerController.Update(Domain.Models.Manufacturer)" -->
+        <member name="M:BackendAPI.Controllers.ManufacturerController.Delete(System.Int32)">
+             <summary>
+             Удаление Manufacturer
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             DELETE /Todo
+             {
+             "Id" : "1"
+             }
+            
+             </remarks>
+             <param name="model">Manufacturer</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.UserController.Add(BackendAPI.Contracts.User.CreateUserRequest)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             POST /Todo
+             {
+             "UserName" : "aaa",
+             "UserRole" : "aaa",
+             "UserPassword" : "aaa",
+             "UserAddress" : "aaa"
+             }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BackendAPI.Controllers.UserController.Update(Domain.Models.User)" -->
+        <member name="M:BackendAPI.Controllers.UserController.Delete(System.Int32)">
+             <summary>
+             Удаление пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+             DELETE /Todo
+             {
+             "ID" : "01",
+             }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+    </members>
+</doc>
